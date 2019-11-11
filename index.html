@@ -136,7 +136,11 @@
       sections[index].classList.add('active-section');
 
       // console.log(menu_links[index], sections[index].id)
-      gtag('event', 'changeActive', { 'section': sections[index].id });
+      gtag('event', 'changeActive', { 
+        'event_category': 'section',
+        'event_label': "name",
+        'value': sections[index].id
+      })
   }
 
   /**
