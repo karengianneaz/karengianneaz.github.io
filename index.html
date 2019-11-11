@@ -31,23 +31,23 @@
 
     <section id="about" data-nav="About" class="active-section">
       <div class="landing__container">
-        <h2>About</h2>
+        <h2>Sobre</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
 
         <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
       </div>
     </section>
-    <section id="books" data-nav="Books">
+    <section id="slides" data-nav="Slides">
       <div class="landing__container">
-        <h2>Books</h2>
+        <h2>Slides</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
 
         <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
       </div>
     </section>
-    <section id="ebooks" data-nav="Ebooks">
+    <section id="refs" data-nav="Refs">
       <div class="landing__container">
-        <h2>Ebooks</h2>
+        <h2>Referências</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
 
         <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
@@ -55,7 +55,7 @@
     </section>
     <section id="contact" data-nav="Contact">
       <div class="landing__container">
-        <h2>Contact</h2>
+        <h2>Contato</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
 
         <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
@@ -63,7 +63,7 @@
     </section>
   </main>
   <footer class="page__footer">
-    <p>&copy Udacity</p>
+    <p>&copy Karen Gianne Azevedo</p>
   </footer>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -83,25 +83,25 @@
   const listStart = document.querySelector('#navbar__list');
 
   const listAbout = document.createElement('li');
-  const listBooks = document.createElement('li');
-  const listEbooks = document.createElement('li');
+  const listSlides = document.createElement('li');
+  const listRef = document.createElement('li');
   const listContact = document.createElement('li');
 
   listStart.appendChild(listAbout);
-  listStart.appendChild(listBooks);
-  listStart.appendChild(listEbooks);
+  listStart.appendChild(listSlides);
+  listStart.appendChild(listRef);
   listStart.appendChild(listContact);
 
-  listAbout.innerHTML = "<a class='menu__link' id='scrolliing1' href='#about'>About</a>";
-  listEbooks.innerHTML = "<a class='menu__link' id='scrolliing2' href='#ebooks'>Ebooks</a>";
-  listBooks.innerHTML = "<a class='menu__link' id='scrolliing3' href='#books'>Books</a>";
-  listContact.innerHTML = "<a class='menu__link' id='scrolliing4' href='#contact'>Contact</a>";
+  listAbout.innerHTML = "<a class='menu__link' id='scrollingAbout' href='#about'>Sobre</a>";
+  listSlides.innerHTML = "<a class='menu__link' id='scrolligSlides' href='#slides'>Slides</a>";
+  listRef.innerHTML = "<a class='menu__link' id='scrollingRef' href='#refs'>Refrências</a>";
+  listContact.innerHTML = "<a class='menu__link' id='scrollingContact' href='#contact'>Contato</a>";
 
 
-  let linkScrolling1 = document.querySelector('#scrolliing1');
-  let linkScrolling2 = document.querySelector('#scrolliing2');
-  let linkScrolling3 = document.querySelector('#scrolliing3');
-  let linkScrolling4 = document.querySelector('#scrolliing4');
+  let linkScrolling1 = document.querySelector('#scrollingAbout');
+  let linkScrolling2 = document.querySelector('#scrolligSlides');
+  let linkScrolling3 = document.querySelector('#scrollingRef');
+  let linkScrolling4 = document.querySelector('#scrollingContact');
 
   linkScrolling1.scrollIntoView({behavior: "smooth"});
   linkScrolling2.scrollIntoView({behavior: "smooth"});
@@ -135,7 +135,8 @@
       menu_links[index].classList.add('active');
       sections[index].classList.add('active-section');
 
-      gtag('event', 'changeActive');
+      // console.log(menu_links[index], sections[index].id)
+      gtag('event', 'changeActive', { 'section': sections[index].id });
   }
 
   /**
