@@ -1,158 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Palestra</title>
-  <!-- Load Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
-  <link href="style.css" rel="stylesheet">
-</head>
-<body>
-  <!-- HTML Follows BEM naming conventions 
-  IDs are only used for sections to connect menu achors to sections -->
-  <header class="page__header">
-    <nav class="navbar__menu">
-      <!-- Navigation starts as empty UL that will be populated with JS -->
-      <ul id="navbar__list">
-      </ul>
-
-    </nav>
-  </header>
-  <main id="container">
-    <header class="main__hero">
-      <h1>Tendências do mercado de TI para ficar de olho.</h1>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Palestra</title>
+    <!-- Load Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="page__header">
+      <nav class="navbar__menu">
+        <ul id="navbar__list">
+        </ul>
+      </nav>
     </header>
-    <!-- Each Section has an ID (used for the anchor) and 
-    a data attribute that will populate the li node.
-    Adding more sections will automatically populate nav.
-    The first section is set to active class by default -->
+    <main id="container">
+      <header class="main__hero">
+        <h1>Tendências do mercado de TI para ficar de olho.</h1>
+      </header>
 
-    <section id="about" data-nav="About" class="active-section">
-      <div class="landing__container">
-        <h2>Sobre</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
+      <section id="about" data-nav="About" class="active-section">
+        <div class="landing__container">
+          <h2>Sobre</h2>
+          <p>Meu nome é Karen, sou de Lavras, mas atualmente moro em Curitiba, me formei aqui na UFLA, em Ciência da Computação.
+            Iniciei a profissão trabalhando com desenvolvedora Android, depois virei Full-Stack, já fui Scrum Master e hoje eu sou Front-end developer na First Foundry.</p>
 
-        <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
-      </div>
-    </section>
-    <section id="slides" data-nav="Slides">
-      <div class="landing__container">
-        <h2>Slides</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
+          <p>Este site será utilizado como demonstração da utilização da ferramenta Google Analytics.</p>
+        </div>
+      </section>
+      <section id="slides" data-nav="Slides">
+        <div class="landing__container">
+          <h2>Slides</h2>
+          <p>Acesse os slides clicando
+            <a href="https://drive.google.com/open?id=1chHYImaqSatnphLzJ86tllPG4lpIjM8G" target="_blank" onclick="onClick()"> aqui</a>.
+          </p>
+        </div>
+      </section>
+      <section id="refs" data-nav="Refs">
+        <div class="landing__container">
+          <h2>Referências</h2>
+          <ul class="refs">
+            <li>
+              <a href="https://insights.stackoverflow.com/survey/2019">Survey StackOverflow 2019</a>.
+            </li>
+            <li>
+              <a href="https://trends.google.com.br/trends/?geo=BR">Google Trends</a>.
+            </li>
+          </ul>  
+        </div>
+      </section>
+      <section id="contact" data-nav="Contact">
+        <div class="landing__container">
+          <h2>Contato</h2>
+          <p>Sintam-se a vontade para entrar em contato comigo, estou á disposição para trocarmos experiências.</p>
+          <p>
+            <b>Telefone: </b> (35) 9 8846-3114
+          </p>
+          <p>
+            <b>Email: </b> karengianne@hotmail.com
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="page__footer">
+      <p>&copy Karen Gianne Azevedo</p>
+    </footer>
 
-        <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
-      </div>
-    </section>
-    <section id="refs" data-nav="Refs">
-      <div class="landing__container">
-        <h2>Referências</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151915910-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-        <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
-      </div>
-    </section>
-    <section id="contact" data-nav="Contact">
-      <div class="landing__container">
-        <h2>Contato</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
+      gtag('config', 'UA-151915910-1', { 'cookieDomain': 'none' });
 
-        <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
-      </div>
-    </section>
-  </main>
-  <footer class="page__footer">
-    <p>&copy Karen Gianne Azevedo</p>
-  </footer>
+      gtag('event', 'visit');
+      
+    </script>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151915910-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script>
+      const listStart = document.querySelector('#navbar__list');
 
-  gtag('config', 'UA-151915910-1', { 'cookieDomain': 'none' });
+      const listAbout = document.createElement('li');
+      const listSlides = document.createElement('li');
+      const listRef = document.createElement('li');
+      const listContact = document.createElement('li');
 
-  gtag('event', 'visit');
-  
-</script>
+      listStart.appendChild(listAbout);
+      listStart.appendChild(listSlides);
+      listStart.appendChild(listRef);
+      listStart.appendChild(listContact);
 
-<script>
-  const listStart = document.querySelector('#navbar__list');
+      listAbout.innerHTML = "<a class='menu__link' id='scrollingAbout' href='#about'>Sobre</a>";
+      listSlides.innerHTML = "<a class='menu__link' id='scrolligSlides' href='#slides'>Slides</a>";
+      listRef.innerHTML = "<a class='menu__link' id='scrollingRef' href='#refs'>Refrências</a>";
+      listContact.innerHTML = "<a class='menu__link' id='scrollingContact' href='#contact'>Contato</a>";
 
-  const listAbout = document.createElement('li');
-  const listSlides = document.createElement('li');
-  const listRef = document.createElement('li');
-  const listContact = document.createElement('li');
+      let linkScrolling1 = document.querySelector('#scrollingAbout');
+      let linkScrolling2 = document.querySelector('#scrolligSlides');
+      let linkScrolling3 = document.querySelector('#scrollingRef');
+      let linkScrolling4 = document.querySelector('#scrollingContact');
 
-  listStart.appendChild(listAbout);
-  listStart.appendChild(listSlides);
-  listStart.appendChild(listRef);
-  listStart.appendChild(listContact);
+      linkScrolling1.scrollIntoView({behavior: "smooth"});
+      linkScrolling2.scrollIntoView({behavior: "smooth"});
+      linkScrolling3.scrollIntoView({behavior: "smooth"});
+      linkScrolling4.scrollIntoView({behavior: "smooth"});
+              
+      const navbar_list = document.getElementById("navbar__list");
 
-  listAbout.innerHTML = "<a class='menu__link' id='scrollingAbout' href='#about'>Sobre</a>";
-  listSlides.innerHTML = "<a class='menu__link' id='scrolligSlides' href='#slides'>Slides</a>";
-  listRef.innerHTML = "<a class='menu__link' id='scrollingRef' href='#refs'>Refrências</a>";
-  listContact.innerHTML = "<a class='menu__link' id='scrollingContact' href='#contact'>Contato</a>";
+      const menu_links = document.querySelectorAll('.menu__link');
+      const sections = document.querySelectorAll('section');
 
+      function onClick() {
+        gtag('event', 'click', { 
+          'event_category': 'slide',
+          'event_label': "slide",
+        })
+      }
 
-  let linkScrolling1 = document.querySelector('#scrollingAbout');
-  let linkScrolling2 = document.querySelector('#scrolligSlides');
-  let linkScrolling3 = document.querySelector('#scrollingRef');
-  let linkScrolling4 = document.querySelector('#scrollingContact');
+      function changeActiveItem(){
+          // total number of sections
+          let index  = sections.length
 
-  linkScrolling1.scrollIntoView({behavior: "smooth"});
-  linkScrolling2.scrollIntoView({behavior: "smooth"});
-  linkScrolling3.scrollIntoView({behavior: "smooth"});
-  linkScrolling4.scrollIntoView({behavior: "smooth"});
-          
-  /**
-   * End Helper Functions
-   * Begin Main Functions
-   * 
-  */
-  const navbar_list = document.getElementById("navbar__list");
+          while(--index && window.scrollY + 350 < sections[index].offsetTop){}
+        
+          //remove active class 
+          menu_links.forEach((link)=> link.classList.remove('active'));
+          sections.forEach((section) => section.classList.remove('active-section'));
 
-  const menu_links = document.querySelectorAll('.menu__link');
-  const sections = document.querySelectorAll('section');
+          //add active class to navigation item
+          menu_links[index].classList.add('active');
+          sections[index].classList.add('active-section');
 
+          gtag('event', 'changeActive', { 
+            'event_category': 'section',
+            'event_label': "name",
+            'value': sections[index].id
+          })
+      }
 
-  // Add class 'active' to section when near top of viewport
+      changeActiveItem();
+      window.addEventListener('scroll', changeActiveItem);
 
-  function changeActiveItem(){
-      // total number of sections
-      let index  = sections.length
-
-      while(--index && window.scrollY + 350 < sections[index].offsetTop){}
-    
-      //remove active class 
-      menu_links.forEach((link)=> link.classList.remove('active'));
-      sections.forEach((section) => section.classList.remove('active-section'));
-
-      //add active class to navigation item
-      menu_links[index].classList.add('active');
-      sections[index].classList.add('active-section');
-
-      // console.log(menu_links[index], sections[index].id)
-      gtag('event', 'changeActive', { 
-        'event_category': 'section',
-        'event_label': "name",
-        'value': sections[index].id
-      })
-  }
-
-  /**
-   * End Main Functions
-   * Begin Events
-   * 
-  */
-
-  // Scroll to anchor ID using scroll event
-  changeActiveItem();
-  window.addEventListener('scroll', changeActiveItem);
-
-</script>
-</body>
+    </script>
+  </body>
 </html>

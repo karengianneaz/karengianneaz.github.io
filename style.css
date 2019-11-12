@@ -11,8 +11,6 @@ body {
     color: #fff;
 }
 
-
-/* Typeography General*/
 h1 {
     font-family: 'Fira Sans', sans-serif;
     font-size: 3em;
@@ -38,7 +36,14 @@ p {
     color: #eee;
 }
 
-/* ---- Layout Rules ---- */
+.refs li a {
+    color: #1287ff;
+    font-family: 'Oxygen', Sans-Serif;
+    font-size: 2em;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
 main {
     margin: 10vh 1em 10vh;
 }
@@ -52,11 +57,6 @@ section {
     position: relative;
     min-height: 80vh;
 }
-
-
-/* ---- Module Rules ---- */
-
-/* Navigation Styles*/
 
 .navbar__menu ul {
     padding-left: 0;
@@ -86,7 +86,6 @@ section {
     color: #fff;
 }
 
-/* Header Styles */
 .page__header {
     background: #fff;
     position: fixed;
@@ -95,7 +94,6 @@ section {
     z-index: 5;
 }
 
-/* Footer Styles */
 .page__footer {
     background: #000;
     padding: 3em;
@@ -106,9 +104,6 @@ section {
     color: #fff;
 }
 
-
-/* ---- Theme Rules ---- */
-/* Landing Container Styles */
 .landing__container {
     padding: 1em;
     text-align: left;
@@ -127,9 +122,6 @@ section:nth-of-type(even) .landing__container {
     text-align: right; 
 }
 
-/* Background Circles */
-/* Note that background circles are created with psuedo elements before and after */
-/* Circles appear to be random do to use of :nth-of-type psuedo class */
 section:nth-of-type(odd) .landing__container::before {
     content: '';
     background: rgba(255, 255, 255, 0.187);
@@ -187,10 +179,6 @@ section:nth-of-type(3n + 1) .landing__container::after {
     transition: ease 0.5s all;
 }
 
-
-/* ---- Theme State Rules ---- */
-/* Section Active Styles */
-/* Note: active-section class is applied through javascript. You should update the class here and in the index.html to what you set in your javascript file.  */
 section.active-section {
     background: rgb(0, 0, 0);
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
@@ -206,7 +194,6 @@ section.active-section .landing__container::after {
     animation: rotate 5s linear 0s infinite forwards reverse;
 }
 
-/* Section Active Styles Keyframe Animations */
 @keyframes rotate {
 	from {
 		transform: rotate(0deg)
